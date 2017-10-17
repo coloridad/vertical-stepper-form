@@ -677,7 +677,7 @@ public class VerticalStepperFormLayout extends RelativeLayout implements View.On
                 }
             }
 
-            //scrollToActiveStep(!restoration);
+            scrollToActiveStep(!restoration);
 
             if (stepNumber == numberOfSteps) {
                 setStepAsCompleted(stepNumber);
