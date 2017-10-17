@@ -688,16 +688,27 @@ public class VerticalStepperFormLayout extends RelativeLayout implements View.On
     }
 
     protected void scrollToStep(final int stepNumber, boolean smoothScroll) {
+
+        int position = 0;
+
+        if (stepNumber > 1) {
+            position = stepLayouts.get(stepNumber - 1).getBottom();
+        }
+
+        final int scrollPosition = position;
+
         if (smoothScroll) {
             stepsScrollView.post(new Runnable() {
                 public void run() {
-                    stepsScrollView.smoothScrollTo(0, stepLayouts.get(stepNumber).getTop());
+
+
+                    stepsScrollView.smoothScrollTo(0, scrollPosition);
                 }
             });
         } else {
             stepsScrollView.post(new Runnable() {
                 public void run() {
-                    stepsScrollView.scrollTo(0, stepLayouts.get(stepNumber).getTop());
+                    stepsScrollView.scrollTo(0, scrollPosition);
                 }
             });
         }
