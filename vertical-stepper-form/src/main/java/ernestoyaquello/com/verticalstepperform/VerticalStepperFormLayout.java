@@ -65,7 +65,7 @@ public class VerticalStepperFormLayout extends RelativeLayout implements View.On
     protected List<View> stepContentViews;
     protected List<TextView> stepsTitlesViews;
     protected List<TextView> stepsSubtitlesViews;
-    protected AppCompatButton confirmationButton;
+    public AppCompatButton confirmationButton;
     protected ProgressBar progressBar;
     protected AppCompatImageButton previousStepButton, nextStepButton;
     protected RelativeLayout bottomNavigation;
