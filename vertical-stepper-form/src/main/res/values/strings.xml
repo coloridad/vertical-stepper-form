@@ -6,7 +6,7 @@
     <string name="vertical_form_stepper_form_discard_cancel">Cancelar</string>
     <string name="vertical_form_stepper_form_discard">Discard</string>
     <string name="vertical_form_stepper_form_confirm_button">Confirmar dato</string>
-    <string name="vertical_form_stepper_form_last_step">Confirmation</string>
+    <string name="vertical_form_stepper_form_last_step">Confirmar</string>
     <string name="vertical_form_stepper_form_sending_data_message">Sending data…</string>
     <string name="vertical_form_stepper_form_current_step_uncompleted_alert">Please complete the current field before continue</string>
 
